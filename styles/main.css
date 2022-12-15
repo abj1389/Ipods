@@ -1,3 +1,89 @@
-hi {
-  color: blue;
+.card {
+  width: 500px;
+  background-color: black;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  margin: 20px;
+  overflow: hidden;
+}
+.card__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__image {
+  width: 50%;
+}
+.card__body {
+  padding: 20px;
+}
+.card__title {
+  margin: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__subtitle {
+  color: white;
+  font-weight: lighter;
+  margin: 20px 0;
+  font-size: 30px;
+}
+.card__copy {
+  color: lightgrey;
+  font-weight: lighter;
+}
+.card__footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__button {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 15px;
+  font-size: 14px;
+}
+.card__button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+.card--reverse {
+  background-color: white;
+}
+.card--reverse .card__title, .card--reverse .card__subtitle {
+  color: black;
+}
+.card--reverse .card__button {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+.card--reverse .card__button:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+body {
+  background-color: white;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: monospace;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1023px) {
+  body {
+    flex-flow: column wrap;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,79 @@
+.card {
+    width: 500px;
+    background-color: $second-color;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin: $spacing;
+    overflow: hidden;
+
+    &__header{
+        width: 100%;
+        @include flexible;
+    }
+
+    &__image{
+        width: 50%;
+    }
+
+    &__body{
+        padding: $spacing;
+    }
+
+    &__title{
+        margin: $spacing;
+        color: $first-color;
+        text-transform: uppercase;
+        font-size: 30px;
+        @include flexible;
+    }
+
+    &__subtitle{
+        color: $first-color;
+        font-weight: lighter;
+        margin: $spacing 0;
+        font-size: 30px;
+    }
+
+    &__copy{
+        color: $third-color;
+        font-weight: lighter;
+    }
+
+    &__footer{
+        padding: $spacing;
+        @include flexible;
+    }
+
+    &__button{
+        color: $first-color;
+        background-color: $second-color;
+        border: 1px solid $first-color;
+        padding: 15px;
+        font-size: 14px;
+
+        &:hover{
+            color: $second-color;
+            background-color: $first-color;
+            border: 1px solid $second-color;
+        }
+    }
+
+    &--reverse{
+        background-color: $first-color;
+        .card__title, .card__subtitle{
+            color: $second-color;
+        }
+
+        .card__button{
+            color:  $second-color;
+            background-color: $first-color;
+            border: 1px solid $second-color;
+
+            &:hover{
+                color:  $first-color;
+                background-color: $second-color;
+                border: 1px solid $first-color;
+            }
+        }
+    }
+}

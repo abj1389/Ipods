@@ -1,0 +1,15 @@
+@mixin flexible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin wrappable{
+    flex-flow: column wrap;
+}
+
+@mixin pc{
+    @media screen and (max-width: $media-pc){
+        @content;
+    }
+}

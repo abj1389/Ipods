@@ -1,3 +1,16 @@
-hi{
-    color: blue;
+@import 'variables';
+@import 'mixins'; 
+@import 'card';
+
+body{
+    background-color: $first-color;
+    padding: $spacing;
+    min-height: 100vh;
+    font-family: $fonts;
+    font-weight: lighter;
+    @include flexible;
+    @include pc{
+        @include wrappable;
+    }
 }
+
